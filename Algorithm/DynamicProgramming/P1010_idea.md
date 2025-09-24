@@ -22,6 +22,6 @@ int leg(int pos, int cnt, int maxN, int maxM){
 N개의 영역을 하나씩 선택해서 경우를 일일이 재귀로 구하는 방법!
 문제는 N=15, M=30과 같은 입력이 들어오면 (N=0인 경우)*(N=1인 경우 + ... N=15인 경우) (이때 N=k인 경우에 대하여 또 곱하기를 해줌. 즉, 자식이 k-1개인 트리다.)
 
-[!poster](./1010_image1.png)
+<img src="./1010_image1.png", height="100x", width="100px"></img>
 
 2) 
