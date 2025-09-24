@@ -65,7 +65,7 @@ int leg(int n, int m){
 주어진 n<=m에 대하여, 1개의 영역을 잇고 나머지 영역은 다시 leg(n-1, m-1)을 구하는 것과 같음.   
 그리고 다리는 교차를 못하기때문에 만약 k개의 영역을 건너고 영역을 잇는다면, 그 만큼 영역은 제외된다.   
 따라서 leg(n-1, m-k)를 계산하는 것과 같음.   
-<img src="./1010_image4.png" width="1000px" height="200px">
+<img src="./1010_image4.png" width="300px" height="400px">
 이러한 논리로, for문을 통해 mIndex를 1씩 빼주고, 그런 모든 mIndex에 대해 leg(n-1, mIndex)를 다시 재귀로 구해주면   
 위에서부터 하나씩 영역을 이엇을 때의 모든 경우의 수를 구할 수 있다!   
 그리고 최종적으로 이를 m[n][m]에 담아서 return해줌.
